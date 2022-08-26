@@ -4,8 +4,6 @@ import {Balance} from "@polkadot/types/interfaces";
 
 
 export async function handleBlock(block: SubstrateBlock): Promise<void> {
-    logger.debug("New block");
-    logger.debug(block.block.header.hash.toString());
     //Create a new starterEntity with ID using block hash
     let record = new StarterEntity(block.block.header.hash.toString());
     //Record block number
