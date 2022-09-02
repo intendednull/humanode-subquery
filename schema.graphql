@@ -1,14 +1,14 @@
 type StarterEntity @entity {
 
-  id: ID! #id is a required field
+  id: ID!
 
-  field1: Int!
+  blockNumber: Int!,
 
-  field2: String #filed2 is an optional field
+  signer: String!,
 
-  field3: BigInt
+  signature: String!,
 
-  field4: Date
+  ticket: String!,
 
-  field5: Boolean
+  ticketSignature: String!,
 }
